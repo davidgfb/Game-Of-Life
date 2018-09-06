@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- CSS styles -->
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Imported scripts -->
+  <script type="text/javascript" src="./js/gridHandler.js"></script>
+  <script type="text/javascript" src="./js/eventsHandler.js"></script>
+  <script type="text/javascript" src="./js/utilities-module.js"></script>
+  <script type="text/javascript" src="./js/game-of-life.js"></script>
+
+  <!-- File title -->
+  <title>Game of Life</title>
+
+</head>
+<body>
+  <div id="global-container">
+    <nav id="menu">
+      <div id="main-menu">
+        <ul>
+          <li>
+            <button type="button" id="start-button">Start</button>
+          </li>
+          <li>
+            <button type="button" id="stop-button">Stop</button>
+          </li>
+          <li>
+            <button type="button" id="reset-button">Reset</button>
+          </li>
+          <li>
+            <button type="button" id="random-button">Random</button>
+          </li>
+          <li>
+            <button type="button" id="exit-button">Exit</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <canvas id="canvas" width="690" height="690"></canvas>
+  </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background: linear-gradient(to right,white, black);
+}
+
+
+#global-container{
+  width: 100%;
+  display: inline-block;
+}
+
+
+nav#menu{
+  float: right;
+  width: 175px;
+}
+
+#main-menu {
+  margin-top: 30px;
+}
+
+#main-menu > ul{
+
+}
+
+#main-menu > ul > li {
+  list-style: none;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+
+#main-menu > ul > li > #exit-button{
+  margin-top: 385px;
+}
+
+#canvas {
+  margin-left: 25px;
+  margin-top: 25px;
+  background-color: #FFFFFF;
+}
+
+button {
+  width: 125px;
+  height: 25px;
+}
