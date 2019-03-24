@@ -8,8 +8,6 @@ const HEIGHT = 690;
 let gridArr;           // Global reference to bidimensional array which
                        // represents the game's grid.
 
-let mouseClick;        // Global reference to the click's coordinates on
-                       // the canvas.
 let cols = WIDTH/10;
 let rows = HEIGHT/10;
 
