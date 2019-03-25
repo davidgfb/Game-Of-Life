@@ -1,4 +1,71 @@
-* {
+body {
   margin: 0;
   padding: 0;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#nav-container {
+  margin: 2em 0;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 2px solid;
+  border-radius: 8px;
+  margin: 1em;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: .4s;
+  font-family: monospace;
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+#start-button {border-color: rgb(38, 179, 4);}
+#start-button:hover {
+  background-color: rgb(38, 179, 4);
+  color: rgb(255, 255, 255);
+}
+
+#stop-button{border-color: rgb(237, 176, 20);}
+#stop-button:hover{
+  background-color: rgb(237, 176, 20);
+  color: rgb(255, 255, 255);
+}
+
+#reset-button{border-color: rgb(254, 29, 29);}
+#reset-button:hover{
+  background-color: rgb(254, 29, 29);
+  color: rgb(255, 255, 255);
+}
+
+#random-button{border-color: rgb(32, 233, 252);}
+#random-button:hover{
+  background-color: rgb(32, 233, 252);
+  color: rgb(255, 255, 255);
+}
+
+#exit-button{border-color: rgb(0, 0, 0);}
+#exit-button:hover{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+#canvas-container {
+
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
 }
