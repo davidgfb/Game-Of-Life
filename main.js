@@ -7,12 +7,12 @@ const path = require('path');
 const url = require('url');
 
 
-let win;              // Global reference to the main window's application.
+let win;               // Global reference to the main window's application.
 let debug = false;     // Variable for the debugger's control.
 
 
-var width = 950;
-var height = 760;
+var width = 1080;
+var height = 825;
 
 
 // ===================================================
@@ -87,7 +87,7 @@ function Debugger(msg) {
     if(msg === "ODT"){
       win.webContents.openDevTools();
     }else if (msg === "IDM") {
-      width = 1440;
+      width = 2000;
     }
     else{
       console.log("[" + Date()+ "]: " + msg);

@@ -4,7 +4,6 @@
 
 let interval;   // Used to stop the game.
 
-
 // ===================================================
 // =             EVENTS LISTENER FUNCTION            =
 // ===================================================
@@ -25,9 +24,6 @@ function initEventListeners(){
 
   var randomButton = $("random-button");
   randomButton.addEventListener('click', randGame);
-
-
-
 
   var exitButton = $("exit-button");
   exitButton.addEventListener('click', exit);
@@ -71,7 +67,7 @@ function stopGame(){
 
 */
 function resetGame(){
-  
+
   reset2DArray(gameOfLife.map);
   gameOfLife.resetProperties();
   updateGrid();

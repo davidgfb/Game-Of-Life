@@ -140,7 +140,7 @@ function paintCell(){
     ctx.fillRect(cellIndex.i*10,cellIndex.j*10,10,10);
   }else{
     ctx.fillStyle = 'white';
-    ctx.clearRect((cellIndex.i*10)+1,(cellIndex.j*10)+1,9,9);
+    ctx.fillRect((cellIndex.i*10)+1,(cellIndex.j*10)+1,9,9);
     drawGrid();
   }
 
