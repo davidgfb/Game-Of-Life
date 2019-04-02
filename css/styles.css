@@ -1,6 +1,15 @@
+
+@font-face {
+  font-family: roundAqua;
+  src: url("../fonts/aqua.ttf");
+}
+
+/**********************************/
+
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 
 #main-container {
@@ -16,8 +25,16 @@ body {
   border: 2px solid black;
   border-radius: 8px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+}
+
+#title {
+  font-family: roundAqua, monospace;
+  font-size: 3.5em;
+  margin: 0;
+  text-align: center;
+  vertical-align: top;
+  padding: .5em 0;
 }
 
 .button {
@@ -31,7 +48,7 @@ body {
   text-decoration: none;
   font-size: 16px;
   transition-duration: .4s;
-  font-family: monospace;
+  font-family: roundAqua, monospace;
   font-weight: bold;
 }
 
@@ -70,10 +87,29 @@ body {
 }
 
 #canvas-container {
+  background-color: white;
   margin: 3em;
   border: 2px solid black;
   border-radius: 5px;
   display: flex;
   align-self: center;
   justify-content: center;
+}
+
+#statusHTML {
+  padding: 1.5em 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+#statusValue {
+  font-weight: bold;
+}
+
+.stopped {
+  color: rgb(237, 176, 20);
+}
+
+.running {
+  color: rgb(38, 179, 4);
 }
