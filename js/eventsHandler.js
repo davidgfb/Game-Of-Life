@@ -41,17 +41,20 @@ function initEventListeners(){
 */
 function startGame(){
 
-  var statusValue = $("statusValue");
-  statusValue.classList.add("running");
-  statusValue.classList.remove("stopped");
-  statusValue.innerHTML = "Running";
+  if(gameOfLife.status != 1){
 
-  gameOfLife.status = 1;
-  interval = setInterval(function(){
+    var statusValue = $("statusValue");
+    statusValue.classList.add("running");
+    statusValue.classList.remove("stopped");
+    statusValue.innerHTML = "Running";
 
-    gameOfLife.updateGOL();
-    updateGrid();
-  }, 100);
+    gameOfLife.status = 1;
+    interval = setInterval(function(){
+
+      gameOfLife.updateGOL();
+      updateGrid();
+    }, 100);
+  }
 }
 
 
