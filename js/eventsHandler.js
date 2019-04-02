@@ -41,6 +41,11 @@ function initEventListeners(){
 */
 function startGame(){
 
+  var statusValue = $("statusValue");
+  statusValue.classList.add("running");
+  statusValue.classList.remove("stopped");
+  statusValue.innerHTML = "Running";
+
   gameOfLife.status = 1;
   interval = setInterval(function(){
 
@@ -57,14 +62,20 @@ function startGame(){
 */
 function stopGame(){
 
+  var statusValue = $("statusValue");
+  statusValue.classList.add("stopped");
+  statusValue.classList.remove("running");
+  statusValue.innerHTML = "Stopped";
+
   gameOfLife.status = 0;
   clearInterval(interval);
 }
 
 
 /*
-
-
+  - Name: resetGame.
+  - Parameters: Void.
+  - Objective: Reset data from all Game of Life cells
 */
 function resetGame(){
 
